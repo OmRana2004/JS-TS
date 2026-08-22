@@ -24,13 +24,22 @@
 
 // IIFE (immidateley invoked function expression)
 
-(() => {
-    console.log("I am an IIFE")
-})
-();
+// (() => {
+//     console.log("I am an IIFE")
+// })
+// ();
   
             // Greeting Functions
-const greet = (user) => {
-    console.log("Goog Evening..", user)
+// const greet = (user) => {
+//     console.log("Goog Evening..", user)
+// }
+// greet('OM')
+
+const table = () => {
+    for (let i =1; i <= 10; i++) {
+    console.log(`10 x ${i} = ${10 * i}`)
 }
-greet('OM')
+}
+table()
+
+
