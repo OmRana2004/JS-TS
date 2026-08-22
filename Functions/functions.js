@@ -35,11 +35,12 @@
 // }
 // greet('OM')
 
-const table = () => {
+const table = (num) => {
     for (let i =1; i <= 10; i++) {
-    console.log(`10 x ${i} = ${10 * i}`)
+    console.log(`${num} x ${i} = ${num * i}`)
 }
 }
-table()
+table(10)
+table(70)
 
 
