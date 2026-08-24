@@ -35,12 +35,22 @@
 // }
 // greet('OM')
 
-const table = (num) => {
-    for (let i =1; i <= 10; i++) {
-    console.log(`${num} x ${i} = ${num * i}`)
-}
-}
-table(10)
-table(70)
+
+                // table
+// const table = (num) => {
+//     for (let i =1; i <= 10; i++) {
+//     console.log(`${num} x ${i} = ${num * i}`)
+// }
+// }
+// table(10)
+// table(70)
 
 
+// name is age year and lives in city.
+
+
+const name ='OM';
+const age = 22;
+const city = "Uttarkashi"
+
+console.log(`${name} is ${age} years old and lives in ${city}`)
