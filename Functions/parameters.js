@@ -80,3 +80,15 @@ orderFood(orderReady);
 
 // orderFood();
 // orderReady();
+
+// ((a,b) => console.log(a+b))(290,490)
+
+// const prices = [10, 20, 30, 40]
+// const newPrices = prices.map(price => price*2)
+
+// console.log(newPrices)
+
+const greet = (name) => {
+    console.log(`How Are You - ${name} Sir`)
+}
+greet("om")
