@@ -37,19 +37,20 @@
 
 // greet("om", 22)
 
-function calculator(a, b) {
+// function calculator(a, b) {
     
-    const add = () => (a+b)
+//     const add = () => (a+b)
     
 
-    const sub = () => (a-b)
+//     const sub = () => (a-b)
    
 
-    const mult = () => (a*b)
+//     const mult = () => (a*b)
     
 
-    const div = () => (a/b)
-       return[add(), sub(), mult(), div()]
-}
+//     const div = () => (a/b)
+//        return[add(), sub(), mult(), div()]
+// }
 
-console.log(calculator(12,2))
+// console.log(calculator(12,2))
+
