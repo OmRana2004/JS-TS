@@ -1,8 +1,7 @@
 const pri = ["coding", "gaming", "sleeping", "eating", "socializing"];
-const prii = pri.filter(char => char.startsWith("s"));
-
-console.log(prii); 
+const newPri = pri.filter((charS) => charS.startsWith('s') )
+console.log(newPri);
 
 setTimeout(() => {
-    console.log(pri[0]);
-}, 2000);
+    console.log(pri[4])
+},2000)
