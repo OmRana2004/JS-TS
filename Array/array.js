@@ -15,19 +15,18 @@ name.push("hanuman")
 name.shift()
 name.unshift("RAM")
 name.reverse()
+// console.log(name)
 
 // console.log(name.length)
 // setTimeout(() => {
 //     console.log(name[name.length-1])
 // },2000)
 
-// console.log(name)
 
-const arr = []
+arr = [];
 
-for(let i = 1; i<=10; i++)
-    if(i % 2 === 0) {
-        arr.push(i)
-    }
-
+for(let i = 1; i <= 10; i++) {
+    if(i % 2 == 0)
+    arr.push(i)
+}
 console.log(arr)
