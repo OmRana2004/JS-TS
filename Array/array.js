@@ -26,7 +26,7 @@ name.reverse()
 arr = [];
 
 for(let i = 1; i <= 10; i++) {
-    if(i % 2 == 0)
-    arr.push(i)
+   t = (`5 x ${i} = ${i*5}`)
+    arr.push(t)
 }
 console.log(arr)
