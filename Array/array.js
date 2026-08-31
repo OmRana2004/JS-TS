@@ -44,12 +44,6 @@ for (let i = 0; i < arr.length; i++) sum = sum + arr[i];
 console.log(sum);
 */
 
-                //SHORTER VERSION USING REDUCE()
-/*                
-const Sarr = [10,20,30,40,50,60]
-const sum = Sarr.reduce((n,o) => n+o)
-console.log(sum)
-*/
 
           // USING forEach
     /*
@@ -61,3 +55,18 @@ arr.forEach((ele) => {
 })
     console.log(sum)
     */
+
+                    //SHORTER VERSION USING REDUCE()
+/*                
+
+
+// const Sarr = [10,20,30,40,50,60]
+// const sum = Sarr.reduce((n,o) => n+o)
+// console.log(sum)
+*/
+
+const arr = [10,20,30,40,50,60];
+const sum = arr.reduce(function(acc, n) {
+    return acc + n;
+})
+console.log(sum);
