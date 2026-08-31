@@ -7,14 +7,13 @@
 //    pri [4] = "SOCILA", console.log(pri[4])
 // },2000)
 
-
 // FINDING THE INDEX OF THE ARRAY
-const name = ["RAM","SITA","LAXMAN","HANUMAN"];
-name.pop()
-name.push("hanuman")
-name.shift()
-name.unshift("RAM")
-name.reverse()
+const name = ["RAM", "SITA", "LAXMAN", "HANUMAN"];
+name.pop();
+name.push("hanuman");
+name.shift();
+name.unshift("RAM");
+name.reverse();
 // console.log(name)
 
 // console.log(name.length)
@@ -22,7 +21,8 @@ name.reverse()
 //     console.log(name[name.length-1])
 // },2000)
 
-
+// TABEL OF 5 INSIDE AN AYYAY USING FOR LOOP
+/*                        
 arr = [];
 
 for(let i = 1; i <= 10; i++) {
@@ -30,3 +30,20 @@ for(let i = 1; i <= 10; i++) {
     arr.push(t)
 }
 console.log(arr)
+*/
+//SUM OF AN GIVEN ARRAY
+/*
+const arr = [10, 20, 30, 40, 50, 60];
+sum = 0;
+
+for (let i = 0; i < arr.length; i++) sum = sum + arr[i];
+
+console.log(sum);
+*/
+
+                //SHORTER VERSION USING REDUCE()
+/*                
+const Sarr = [10,20,30,40,50,60]
+const sum = Sarr.reduce((n,o) => n+o)
+console.log(sum)
+*/
