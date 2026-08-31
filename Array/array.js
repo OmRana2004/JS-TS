@@ -7,16 +7,19 @@
 //    pri [4] = "SOCILA", console.log(pri[4])
 // },2000)
 
-// FINDING THE INDEX OF THE ARRAY
+              // FINDING THE INDEX OF THE ARRAY AND ALL CURD METHODS
+/*
 const name = ["RAM", "SITA", "LAXMAN", "HANUMAN"];
 name.pop();
 name.push("hanuman");
 name.shift();
 name.unshift("RAM");
 name.reverse();
-// console.log(name)
+console.log(name)
+console.log(name.length)
+*/
 
-// console.log(name.length)
+
 // setTimeout(() => {
 //     console.log(name[name.length-1])
 // },2000)
@@ -47,3 +50,14 @@ const Sarr = [10,20,30,40,50,60]
 const sum = Sarr.reduce((n,o) => n+o)
 console.log(sum)
 */
+
+          // USING forEach
+    /*
+const arr = [10,20,30,40];
+sum = 0;
+
+arr.forEach((ele) => {
+    sum = sum + ele
+})
+    console.log(sum)
+    */
