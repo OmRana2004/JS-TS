@@ -71,19 +71,27 @@ arr.forEach((ele) => {
 // })
 // console.log(sum);
 
-    const res = ["hello", "by"]
-    const userChoice = "hello"
+//     const res = ["hello", "by"]
+//     const userChoice = "hello"
 
-        for(let i = 0; i <= 6; i++) {
-   if(userChoice === res[0]) {
-    console.log("Hello Ji")
-   } else if(userChoice === res[1]) {
-    console.log("!By Ji")
-   } else {
-        console.log("Choose atleast one options")
-        break;
-   }
-}
+//         for(let i = 0; i <= 6; i++) {
+//    if(userChoice === res[0]) {
+//     console.log("Hello Ji")
+//    } else if(userChoice === res[1]) {
+//     console.log("!By Ji")
+//    } else {
+//         console.log("Choose atleast one options")
+//         break;
+//    }
+// }
+
+let prices = [100, 200, 300];
+let fruits = ["Apple", "Mango", "Banana"];
+let scores = [80, 90, 75];
+let users = ["Om", "Rahul", "Aman"];
+
+for(let i = 0; i<prices.length; i++)
+    console.log(prices[i])
   
 
 
