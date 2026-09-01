@@ -65,8 +65,26 @@ arr.forEach((ele) => {
 // console.log(sum)
 */
 
-const arr = [10,20,30,40,50,60];
-const sum = arr.reduce(function(acc, n) {
-    return acc + n;
-})
-console.log(sum);
+// const arr = [10,20,30,40,50,60];
+// const sum = arr.reduce(function(acc, n) {
+//     return acc + n;
+// })
+// console.log(sum);
+
+    const res = ["hello", "by"]
+    const userChoice = "hello"
+
+        for(let i = 0; i <= 6; i++) {
+   if(userChoice === res[0]) {
+    console.log("Hello Ji")
+   } else if(userChoice === res[1]) {
+    console.log("!By Ji")
+   } else {
+        console.log("Choose atleast one options")
+        break;
+   }
+}
+  
+
+
+    
