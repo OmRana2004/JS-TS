@@ -85,16 +85,20 @@ arr.forEach((ele) => {
 //    }
 // }
 
-let prices = [100, 200, 300];
-let fruits = ["Apple", "Mango", "Banana"];
-let scores = [80, 90, 75];
-let users = ["Om", "Rahul", "Aman"];
+// let prices = [100, 200, 300];
+// let fruits = ["Apple", "Mango", "Banana"];
+// let scores = [80, 90, 75];
+// let users = ["Om", "Rahul", "Aman"];
 
-for(let i = 0; i<prices.length; i++)
-    console.log(prices[i])
-setTimeout(() =>{
-    console.log(fruits[fruits.length-1])
-},2000)
+// for(let i = 0; i<prices.length; i++)
+//     console.log(prices[i])
+
+                                //FINDING THE 2 INDEX AND LAST INDEX OF AN ARRAY 
+const arr = ["om","rana","ram","sita","laxaman","hanuman","bali","akshat","bisht"]
+
+console.log(arr[2])
+console.log(arr[arr.length-3])    
+
   
 
 
