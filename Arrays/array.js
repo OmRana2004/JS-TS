@@ -92,6 +92,9 @@ let users = ["Om", "Rahul", "Aman"];
 
 for(let i = 0; i<prices.length; i++)
     console.log(prices[i])
+setTimeout(() =>{
+    console.log(fruits[fruits.length-1])
+},2000)
   
 
 
