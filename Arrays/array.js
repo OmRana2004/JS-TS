@@ -94,12 +94,16 @@ arr.forEach((ele) => {
 //     console.log(prices[i])
 
                                 //FINDING THE 2 INDEX AND LAST INDEX OF AN ARRAY 
-const arr = ["om","rana","ram","sita","laxaman","hanuman","bali","akshat","bisht"]
+// const arr = ["om","rana","ram","sita","laxaman","hanuman","bali","akshat","bisht"]
 
-console.log(arr[2])
-console.log(arr[arr.length-3])    
+// console.log(arr[2])
+// console.log(arr[arr.length-3])
 
-  
+  let arr = [30,50,80,10];
+
+arr.sort((a,b)=>a-b);
+
+console.log(arr);
 
 
     
