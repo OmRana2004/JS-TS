@@ -99,16 +99,30 @@ arr.forEach((ele) => {
 // console.log(arr[2])
 // console.log(arr[arr.length-3])
 
-let arr = [30,50,80,10];
+// let arr = [30,50,80,10];
 
-arr.sort((a,b)=>a-b);
+// arr.sort((a,b)=>a-b);
 
-console.log(arr);
-console.log(arr.length)
+// console.log(arr);
+// console.log(arr.length)
 
 
-let ar = [10,20,30,40,50,60]
-ar.forEach(function(elem,idx) {
-    console.log(elem,idx);
-});
+// let ar = [10,20,30,40,50,60]
+// ar.forEach(function(elem,idx) {
+//     console.log(elem,idx);
+// });
     
+
+    //ARRAY DESTRUCTURING
+/*
+const arr = [10,20,30,40];
+const [a,b,c,d] = arr
+console.log(a,b,c,d)
+*/
+
+const arr = [10,20,30,40]
+const arr1 = arr;
+
+arr1.push(60)
+
+console.log(arr,arr1)
