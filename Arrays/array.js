@@ -120,9 +120,13 @@ const [a,b,c,d] = arr
 console.log(a,b,c,d)
 */
 
+
+        //rest operator
+const [first, ...rest] = [10,20,30,40]
+console.log(first,rest)
+
+        //spread operator
 const arr = [10,20,30,40]
-const arr1 = arr;
-
-arr1.push(60)
-
+const arr1 = [...arr]
+    arr1.push(60)
 console.log(arr,arr1)
