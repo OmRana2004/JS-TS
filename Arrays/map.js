@@ -7,18 +7,10 @@ Iska kaam simple hai — array ke har element par ek function chalana aur ek nay
 const arr = [1, 2, 3, 4, 5];
 const data = ["om", "rana", "akshat"]
 
-const newArr = arr.map ((num)=> {
-    return num * 2;
-})
+const newArr = arr.map((x => x*2))
 
+const newData = data.map((caps) => caps.startsWith("a") ? caps.toUpperCase() : caps)
 
-const newData = data.map((caps) => 
-    caps.startsWith("a") ? caps.toUpperCase() : caps
-)
-
-console.log(newData);
-
-setTimeout(() => {
-    console.log(newArr)
-}, 3000)
+console.log(newArr)
+console.log(newData)
 
