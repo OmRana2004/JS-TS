@@ -88,7 +88,3 @@ orderFood(redy)
 
 // console.log(newPrices)
 
-const greet = (name) => {
-    console.log(`How Are You - ${name} Sir`)
-}
-greet("om")

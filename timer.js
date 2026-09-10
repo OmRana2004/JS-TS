@@ -13,8 +13,10 @@
 //     console.log("Jai Shri Ram")
 // },20000)
 
-let a = "6";
-let b = 7;
-let c = a-b
+const s = 10
+const s1 = 20
+const s2 = 30
+const s3 = 40
 
-console.log(c)
+console.log(Array.isArray("om"))
+console.log(Array.of(s,s1,s2,s3))
