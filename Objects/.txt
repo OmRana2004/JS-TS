@@ -1,0 +1,79 @@
+Objects — Complete Topic List
+
+1. Object Basics
+
+Object kya hai
+Key-value pairs
+Creating objects
+Accessing properties
+Dot notation
+Bracket notation
+Adding / updating / deleting properties
+
+2. Object Methods
+
+Methods kya hote hain
+this keyword
+Method shorthand
+
+3. Object Destructuring
+
+Basic destructuring
+Renaming variables
+Default values
+Nested destructuring
+
+4. Object Spread & Rest
+
+Spread operator ...
+Copying objects
+Merging objects
+Rest properties
+
+5. Object Iteration
+
+for...in
+Object.keys()
+Object.values()
+Object.entries()
+
+6. Important Object Utilities
+
+Object.assign()
+Object.hasOwn()
+hasOwnProperty()
+Object.freeze()
+Object.seal()
+
+7. Nested Objects
+
+Objects inside objects
+Accessing nested properties
+Updating nested properties
+Optional chaining ?.
+
+8. Objects + Arrays
+
+Array of objects
+Object containing arrays
+Destructuring arrays/objects together
+
+9. Important Concepts
+
+Primitive vs Reference
+Objects are reference types
+Copying objects
+Shallow copy vs deep copy
+Object comparison
+
+10. Advanced / Interview Topics
+
+Constructor functions
+new keyword
+Prototypes
+Prototype chain
+Object.create()
+Classes vs objects
+Getters and setters
+Property descriptors
+Computed property names

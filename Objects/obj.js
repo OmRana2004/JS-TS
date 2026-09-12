@@ -1,5 +1,7 @@
                                     //OBJECTS LITERALS
 
+const { use } = require("react")
+
        /*                             
 const user = {
     name: "om",
@@ -28,12 +30,23 @@ console.log(user)
            */
 
                                     // OBJECT METHODS
-const user = {
-    name: "Sita",
-    call: "Mata",
+// const user = {
+//     name: "Sita",
+//     call: "Mata",
 
-    greet() {
-        console.log(this.name,this.call)
-    }
+//     greet() {
+//         console.log(this.name,this.call)
+//     }
+// }
+// user.greet()
+
+    // Method Shortand (MODERN AND SHORTER SYNTAX TO WRITE AN FUNCTION) 
+const user = {
+    name:"om",
+
+call() {
+    console.log(this.name)
 }
-user.greet()
+}
+user.call()
+
