@@ -1,5 +1,6 @@
                                     //OBJECTS LITERALS
 
+       /*                             
 const user = {
     name: "om",
     lName: "rana",
@@ -22,5 +23,17 @@ console.log(user["name"],user["isLogin"])
 
     //DELETING PROPERTIES
 delete user.address;
-
 console.log(user)
+                    
+           */
+
+                                    // OBJECT METHODS
+const user = {
+    name: "Sita",
+    call: "Mata",
+
+    greet() {
+        console.log(this.name,this.call)
+    }
+}
+user.greet()
