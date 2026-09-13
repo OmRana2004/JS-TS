@@ -1,9 +1,5 @@
-const arr1 = ["OM"]
-const arr2 = ["RANA"]
-
-const n = arr1.concat(arr2)
-console.log(n);
-console.log(n.indexOf("RANA"));
+const total = [10,20,30,40,50,60,70,80,90]
+console.log(total.reduce((a,c) => a+c))
 
 
 
