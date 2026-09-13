@@ -1,5 +1,7 @@
-const total = [10,20,30,40,50,60,70,80,90]
-console.log(total.reduce((a,c) => a+c))
+const arr = [1,2,3];
+    const newArr = arr.map(x=>x*2);
+    console.log(newArr);
+    
 
 
 
