@@ -11,8 +11,17 @@
 // }
 // orderFood(ready);
 
-arr = [1,1,1,3,15,41,53,21]
-newArr = arr.map(x=>x*2)
-console.log(newArr);
+const bool = false;
+const val1 = 10;
+const val2 = 20;
 
+function sum(a,b){
+     const total = a+ b
+      return total;
+}
+
+let res1 = sum(val1,val2) 
+let res2 = sum(30,40) 
+
+console.log(`RESULT IS: ${bool === true ? res1 : res2}`)
 
