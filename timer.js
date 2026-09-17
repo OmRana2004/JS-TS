@@ -11,17 +11,17 @@
 // }
 // orderFood(ready);
 
-const bool = false;
-const val1 = 10;
-const val2 = 20;
-
-function sum(a,b){
-     const total = a+ b
-      return total;
+function one(callback) {
+    setTimeout(()=> {
+            callback();
+    },2000)
+    
+    console.log("THIS IS FIRST FUNCTION");
 }
 
-let res1 = sum(val1,val2) 
-let res2 = sum(30,40) 
+    function two() {
+        console.log("THIS IS SECOND FUNCTION")
+    }
 
-console.log(`RESULT IS: ${bool === true ? res1 : res2}`)
+one(two);
 
