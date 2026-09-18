@@ -24,4 +24,5 @@ function one(callback) {
     }
 
 one(two);
+one(two);
 
