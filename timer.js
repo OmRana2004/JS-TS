@@ -11,17 +11,11 @@
 // }
 // orderFood(ready);
 
-function one(callback) {
-    setTimeout(()=> {
-            callback();
-    },2000)
-    
-    console.log("THIS IS FIRST FUNCTION");
+function reverse(str) {
+    return str.split('').reverse().join('');
 }
-
-    function two() {
-        console.log("THIS IS SECOND FUNCTION")
-    }
-
-one(two);
+     console.log(reverse("ANAROM"));
+     
+   
+    
 
