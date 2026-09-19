@@ -12,9 +12,12 @@
 // orderFood(ready);
 
 const str = "OM RANA"
-const revs = str.split("").reverse().join("")
-
-console.log(revs);
+const reversed = ""
+    for (let i = str.length-1; i >=0; i--) {
+        reversed += str[i];
+    }
+    console.log(reversed);
+    
 
 
    
