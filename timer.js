@@ -11,10 +11,14 @@
 // }
 // orderFood(ready);
 
-function reverse(str) {
-    return str.split('').reverse().join('');
+const reversing = (str) => {
+    reversed = "";
+    for( let i = str.length-1; i >= 0; i--){
+        reversed += str[i];
+    }
+    return reversed;
 }
-     console.log(reverse("ANAROM"));
+     console.log(reversing("ANAR MO"));
      
    
     
