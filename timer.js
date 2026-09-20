@@ -11,13 +11,18 @@
 // }
 // orderFood(ready);
 
-for (let i = 1; i <= 10; i++) {
-  for (let j = 1; j <= 10; j++) {
-    console.log(`${i} x ${j} = ${i * j}`);
-  }
-  console.log(" ");
-}
+// for (let i = 1; i <= 10; i++) {
+//   for (let j = 1; j <= 10; j++) {
+//     console.log(`${i} x ${j} = ${i * j}`);
+//   }
+//   console.log(" ");
+// }
 
+const coding = ["JS", "PYTHON", "JAVA", "RUST"]
+
+coding.forEach((v,i,a) => {
+    console.log(v,i,a);
+})
 
 
 
