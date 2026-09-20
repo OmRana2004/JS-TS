@@ -113,14 +113,6 @@ arr.forEach((ele) => {
 // });
     
 
-    //ARRAY DESTRUCTURING
-
-const arr = [10,20,30,40]
-const [a,b,c,d] = arr
-
-console.log(a,b,c,d)
-
-
         //rest operator
 // const [first, ...rest] = [10,20,30,40]
 // console.log(first,rest)
@@ -130,3 +122,18 @@ console.log(a,b,c,d)
 // const arr1 = [...arr]
 // arr1.push(60)
 // console.log(arr,arr1)
+
+ //ARRAY DESTRUCTURING
+// const arr = ["RAM", "SITA", "LAXMAN", "HANUMAN"];
+// const [R, S, L, H] = arr
+
+// console.log(L);
+
+   // SWAP THE VALUES
+let x = 5;
+let y = 10;
+
+[x,y] = [y,x]
+console.log(y);
+
+
