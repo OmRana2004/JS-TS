@@ -40,6 +40,33 @@ console.log(user)
 // }
 // user.greet()
 
+const myCoding = [
+    {
+        langNama: "JAVASCRIPT",
+        syntax: "JS"
+    },
+    {
+        langNama: "PYTHON",
+        syntax: "PY"
+    },
+    {
+        langNama: "JAVA",
+        syntax: "JAVA"
+    },
+    {
+        langNama: "RUST",
+        syntax: "RS"
+    }
+]
+
+myCoding.forEach((items) => {
+    console.log(items.langNama);
+    setTimeout(() => {
+        console.log(items.syntax);
+    },2000)
+    
+})
+
     // Method Shortand (MODERN AND SHORTER SYNTAX TO WRITE AN FUNCTION) 
 const user = {
     name:"om",

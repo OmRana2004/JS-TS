@@ -18,11 +18,6 @@
 //   console.log(" ");
 // }
 
-const coding = ["JS", "PYTHON", "JAVA", "RUST"]
-
-coding.forEach((v,i,a) => {
-    console.log(v,i,a);
-})
 
 
 
