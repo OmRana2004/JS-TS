@@ -11,13 +11,12 @@
 // }
 // orderFood(ready);
 
-let str = "RACECAR";
-let reversed = ""
-
-for(let i = str.length-1; i >=0; i--) {
-    reversed += str[i];
+const isPalandorm = (str) => {
+    return str.split("").reverse("").join("");
 }
-console.log(str === reversed);
+console.log(isPalandorm("OM RANA"));
+
+
 
 
 
