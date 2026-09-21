@@ -65,12 +65,12 @@ const myCoding = [
 
 myCoding.forEach((items) => {
     console.log(items.langNama);
-    console.log(items.syntax);
 })
 setTimeout(() => {
-        const total = myCoding.reduce((acc, items) => acc + items.price,0 )
-        console.log(`YOUR TOTAL PRICE IS: ${total}`)
+        const total = myCoding.reduce((acc,items) => acc+items.price,0)
+        console.log(`YOUR TOTAL VALUE IS: ${total}`)
     },2000)
+    
 
     // Method Shortand (MODERN AND SHORTER SYNTAX TO WRITE AN FUNCTION) 
 // const user = {
