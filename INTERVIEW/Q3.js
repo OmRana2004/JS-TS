@@ -1,12 +1,12 @@
   // CHECK WEATHER THE STRING IS PLANDROME OR NOT
 
   let str = "RACECAR";
-  let reverse = "";
+  let plandrome = "";
 
-  for(let i = str.length-1; i >= 0; i--) {
-    reverse += str[i]
+  for(let i = str.length-1; i>=0; i--){
+    plandrome += str[i]
   }
-
-  console.log(reverse === str);
+  console.log(plandrome === str);
+  
   
   
