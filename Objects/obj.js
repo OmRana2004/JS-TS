@@ -1,7 +1,5 @@
                                     //OBJECTS LITERALS
 
-const { use } = require("react")
-
        /*                             
 const user = {
     name: "om",
