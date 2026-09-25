@@ -17,5 +17,12 @@
         document.querySelector('.language').appendChild(li)
     }
     addLan("python")
+
+    const addOptLan = (lanName) => {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(lanName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptLan("golang")
 </script>
 </html>
