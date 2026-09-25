@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px;
+    background: #e8edf3;
+    color: #202938;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 250ms ease;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 auto 64px;
+}
+
+nav a {
+    min-width: 130px;
+    padding: 12px 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #fff;
+    color: #202938;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+nav a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px #1e293b1a;
+}
+
+.canvas {
+    width: min(100%, 680px);
+    margin: 0 auto;
+    padding: 40px 32px;
+    border: 1px solid #d8e0e9;
+    border-radius: 18px;
+    background: #ffffffd9;
+    box-shadow: 0 18px 50px #27364b18;
+    text-align: center;
+}
+
+.canvas h1 {
+    margin: 0 0 30px;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+}
+
+.button {
+    display: inline-grid;
+    width: 112px;
+    height: 112px;
+    margin: 8px;
+    place-items: center;
+    border: 3px solid #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px #20293826;
+    color: #202938;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.07em;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.button:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 9px 20px #20293830;
+}
+
+.button:active {
+    transform: scale(0.97);
+}
+
+#grey {
+    background: #9ca3af;
+}
+
+#white {
+    background: #fff;
+}
+
+#blue {
+    background: #60a5fa;
+}
+
+#yellow {
+    background: #facc15;
+}
+
+.canvas h2 {
+    margin: 30px 0 0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.canvas h2 span {
+    display: block;
+    color: #64748b;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+
+    nav {
+        margin-bottom: 36px;
+    }
+
+    .canvas {
+        padding: 32px 16px;
+    }
+
+    .button {
+        width: 92px;
+        height: 92px;
+        margin: 6px;
+    }
+}
