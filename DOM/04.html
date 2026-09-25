@@ -24,5 +24,21 @@
         document.querySelector('.language').appendChild(li)
     }
     addOptLan("golang")
+
+    //EDIT
+    const seconLan = document.querySelector("li:nth-child(2)")
+    // seconLan.innerHTML = "Mojo"
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    seconLan.replaceWith(newli)
+
+    //edit
+    const firstLan = document.querySelector("li:first-child")
+    firstLan.outerHTML = '<li>TYPESCRIPT</li>'
+
+    //REMOVE
+    const lastLan = document.querySelector("li:last-child")
+    lastLan.remove()
+
 </script>
 </html>
