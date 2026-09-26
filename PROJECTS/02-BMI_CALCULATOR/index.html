@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="style.css">
     <title>BMI_CALCULATOR</title>
 </head>
-<body>
-    <nav>
+<body style="color: beige; background-color: rgba(18, 18, 18, 0.786);">
+    <nav style="display: flex; justify-content: center;">
         <a href="/">HOME</a>
         <a href="https://youtube.com">YOUTUBE</a>
     </nav>
     <div class="container">
         <h1>BMI Calculator</h1>
         <form>
-            <p><label>Height in CM: </label><input type="text id="height"></p>
-            <p><label>Weight in KG: </label><input type="text id="weight"></p>
+            <p><label for="height">Height in CM: </label><input type="number" id="height"></p>
+            <p><label for="weight">Weight in KG: </label><input type="number" id="weight"></p>
             <button>Calculator</button>
             <div id="results"></div>
             <div id="weight-guid">
