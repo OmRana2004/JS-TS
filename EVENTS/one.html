@@ -19,23 +19,38 @@
     </div>
 </body>
 <script>
-    // type, timestamp, defaultPrevented
-    // traget, toElement, srcElement, currentTaraget,
-    // clientX, clientY, screeX, screenY
-    // altKey, ctrKey, shiftKey, keyCode
+          // things to learn
+   /*
+   type, timestamp, defaultPrevented
+    traget, toElement, srcElement, currentTaraget,
+    clientX, clientY, screeX, screenY
+    altKey, ctrKey, shiftKey, keyCode
+    */
 
-    document.getElementById('images').addEventListener('click',((e)=>{
-        console.log("clicked inside the ul");
-    }),true)// yea jo hum true kar raha ha na its called bubbling and if if dont pass anything the default value is false
+    // document.getElementById('images').addEventListener('click',((e)=>{
+    //     console.log("clicked inside the ul");
+    // }),true)// yea jo hum true kar raha ha na its called bubbling and if if dont pass anything the default value is false
 
-    document.getElementById('owl').addEventListener('click',((e)=>{
-        console.log("clicked inside the owl");
-    }),true)
+    // document.getElementById('owl').addEventListener('click',((e)=>{
+    //     console.log("clicked inside the owl");
+    // }),true)
 
-    document.getElementById('google').addEventListener('click',((e)=>{
-        e.preventDefault();
-        e.stopPropagation()
-        console.log("google is clicked");
+    // document.getElementById('google').addEventListener('click',((e)=>{
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("google is clicked");
+    // }))
+
+    document.querySelector('#images').addEventListener('click',((e)=>{
+        console.log(e.target.parentNode);
+        if(e.target.tagName == 'IMG') {
+            console.log(e.target.id);
+            
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+        }
+        
+        
     }))
 
 </script>
