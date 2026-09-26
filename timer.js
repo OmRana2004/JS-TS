@@ -1,6 +1,8 @@
 // const orderFood = (hof) => {
 //     console.log("YOUR FOOD IS PREPARIG!");
 
+const { use } = require("react");
+
 //     setTimeout(()=> {
 //         hof()
 //     },2000)
@@ -19,17 +21,12 @@
 // }
 
 
-function vol(str){
-  let count = 0;
-    for(let i = 0; i < str.length; i++) {
-        if("AEIOUaeiou".includes(str[i])){
-            count++;
-        }
-    }
-    return count
+function userP(name, role) {
+    const users = {name, role}
+    console.log(users.name, users.role);
 }
-console.log(vol("AEiou"));
 
+userP("om", "enginner")
 
 
 
