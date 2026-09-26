@@ -24,8 +24,19 @@
     // clientX, clientY, screeX, screenY
     // altKey, ctrKey, shiftKey, keyCode
 
+    document.getElementById('images').addEventListener('click',((e)=>{
+        console.log("clicked inside the ul");
+    }),true)// yea jo hum true kar raha ha na its called bubbling and if if dont pass anything the default value is false
+
     document.getElementById('owl').addEventListener('click',((e)=>{
-        console.log(e);
+        console.log("clicked inside the owl");
+    }),true)
+
+    document.getElementById('google').addEventListener('click',((e)=>{
+        e.preventDefault();
+        e.stopPropagation()
+        console.log("google is clicked");
     }))
+
 </script>
 </html>
