@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS_BASIC</title>
+</head>
+<body style="background-color:rgb(55, 50, 50); color: beige;">
+    <h2>Amazing images</h2>
+    <div>
+        <ul id = "images">
+            <li><img width="200px" id="photoshop" src="https://imgs.search.brave.com/4EvErlnQi6EQdDOyRaefcUfF2_bn6BsgG44YHEME9N0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMjIz/MjYxMTgyOS9waG90/by9kZW1vLW1ldGFs/LWJsb2Nrcy1mb3Jt/LXRoZS13b3JkLWRl/bW8tYW4tZXh0ZW5z/aXZlLWNvbmNlcHQt/b2YtdGhlLXdvcmQt/ZGVtby1hcHBsaWVk/LWluLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1oUjRYM1lz/cExZVm5iX2ZfNDhW/WkdYYU5sOWplUTZo/dVM0ZV9lWGpPY0lV/PQ" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://imgs.search.brave.com/DYdh76rRnYUBqUF-_SD2pUB3v9cdQdA0DTxeAQTGPZQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzIxLzIyLzI5Lzk2/LzM2MF9GXzIxMjIy/OTk2NTNfT3RjOGtr/bmxjYk42Rktidjk3/ZFpsNGZkMVdPcHVz/YVkuanBn" alt=""></li>
+            <li><img width="200px" id="river" src="https://imgs.search.brave.com/-L6fZw7NyMPAybJ4h2h5iaq-ZjnYiD9cEYbZNrqT3Mc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L3ByZW1pdW0tcGhv/dG8vZGVtby13b3Jk/LW1hZGUtd2l0aC1i/dWlsZGluZy1ibG9j/a3MtaXNvbGF0ZWQt/d2hpdGVfMzg0OTQ4/LTEwODUzLmpwZz9n/YT1HQTEuMS4xMjcy/NjI2NTgyLjE3OTAy/MzgzNjMmc2VtdD1h/aXNfaHlicmlkJnc9/NzQwJnE9ODA" alt=""></li>
+            <li><img width="200px" id="owl" src="https://imgs.search.brave.com/XCmWdX-8mExMD0Ayi0FXIg0rWlFwpRxuUtpYfth-ZOw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdDIu/ZGVwb3NpdHBob3Rv/cy5jb20vNDY4MDUx/ODYvODQ0NDgvaS80/NTAvZGVwb3NpdHBo/b3Rvc184NDQ0ODkx/MTYtc3RvY2stcGhv/dG8tZGVtby1kYXkt/bWVzc2FnZS13cml0/dGVuLXJpcHBlZC5q/cGc" alt=""></li>
+            <li><img width="200px" id="prayer" src="https://imgs.search.brave.com/7svrTPCmRBGi0gOkb_-aIb7zCVkIPBfLuMS7-EfEUXU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9kZW1v/LWJ1c2luZXNzd29t/YW4tYmxhY2stamFj/a2V0LXNob3dzLWNh/cmQtaW5zY3JpcHRp/b24tc2VsZWN0aXZl/LWZvY3VzLTgwNjU2/NDA3LmpwZw" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // type, timestamp, defaultPrevented
+    // traget, toElement, srcElement, currentTaraget,
+    // clientX, clientY, screeX, screenY
+    // altKey, ctrKey, shiftKey, keyCode
+
+    document.getElementById('owl').addEventListener('click',((e)=>{
+        console.log(e);
+    }))
+</script>
+</html>
