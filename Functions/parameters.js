@@ -52,19 +52,17 @@
 
 //  1 CODE
 
-function orderFood(hof) {
-  console.log("Your Food is Preparing Sir!")
+function order(hof) {
+  console.log("your food is preparing sir");
   setTimeout(() => {
     hof()
   },2000)
-  
 }
 
-function redy() {
-  console.log("Your Food is Ready sir!")
-}
-
-orderFood(redy)
+  function ready() {
+    console.log("your food is ready sir");
+  }
+order(ready)
 
 // // 2 CODE
 

@@ -49,8 +49,14 @@
 // name is age year and lives in city.
 
 
-const name ='OM';
-const age = 22;
-const city = "Uttarkashi"
+// const name ='OM';
+// const age = 22;
+// const city = "Uttarkashi"
 
-console.log(`${name} is ${age} years old and lives in ${city}`)
+// console.log(`${name} is ${age} years old and lives in ${city}`)
+
+const greeting = (user) => {
+    console.log(`good morning :${user}`);
+    
+}
+greeting("OM")
