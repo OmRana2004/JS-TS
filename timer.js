@@ -21,12 +21,25 @@ const { use } = require("react");
 // }
 
 
-function userP(name, role) {
-    const users = {name, role}
-    console.log(users.name, users.role);
+let vol = (str) => {
+    let count = 0;
+    for(let i = 0; i<str.length; i++){
+        if("aeiouAEIOU".includes(str[i])){
+           count++
+        }
+    }
+    return count;
 }
+console.log(vol("omrana"));
+ 
+const rvs = (str) => {
+    return str.split("").reverse("").join("")
+}
+console.log(rvs("omrana"));
 
-userP("om", "enginner")
+let str = "OMRANA";
+let rvss = str.split("").reverse().join("")
+console.log(rvss);
 
 
 
