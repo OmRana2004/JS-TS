@@ -18,16 +18,24 @@
 // }
 
 
-const vol = (str) => {
-    let c = 0;
-    for(let i = 0; i<str.length; i++){
-        if("aeiouAEIOU".includes(str[i])){
-            c++
-        }   
-    }
-    return c;
-}
-console.log(vol("omrana"));
+// const vol = (str) => {
+//     let c = 0;
+//     for(let i = 0; i<str.length; i++){
+//         if("aeiouAEIOU".includes(str[i])){
+//             c++
+//         }   
+//     }
+//     return c;
+// }
+// console.log(vol("omrana"));
+
+let a = 10;
+let b = 20;
+
+[a,b] = [b,a]
+
+console.log(a);
+
 
 
  
