@@ -8,6 +8,8 @@
 <body>
     <h1>JAI SHRI RAM</h1>
     <button id="stop">stop</button>
+    <button id="inc">INC</button>
+    <p id="count">1</p>
 </body>
 <script>
     const sayJaiShriRam = () => {
@@ -27,6 +29,16 @@
         console.log("STOPPED");
    }))
     
+    
+        let c = 0;
+        const display = document.querySelector('#count')
+        document.querySelector('#inc').onclick = () => {
+            c++;
+            display.textContent = c;
+            console.log(c);
+        }
+        
+        
     
    
 
