@@ -1,8 +1,5 @@
 // const orderFood = (hof) => {
 //     console.log("YOUR FOOD IS PREPARIG!");
-
-const { use } = require("react");
-
 //     setTimeout(()=> {
 //         hof()
 //     },2000)
@@ -21,25 +18,32 @@ const { use } = require("react");
 // }
 
 
-let vol = (str) => {
-    let count = 0;
+const vol = (str) => {
+    let c = 0;
     for(let i = 0; i<str.length; i++){
         if("aeiouAEIOU".includes(str[i])){
-           count++
-        }
+            c++
+        }   
     }
-    return count;
+    return c;
 }
 console.log(vol("omrana"));
- 
-const rvs = (str) => {
-    return str.split("").reverse("").join("")
-}
-console.log(rvs("omrana"));
 
-let str = "OMRANA";
-let rvss = str.split("").reverse().join("")
-console.log(rvss);
+
+ 
+
+
+
+// const rvs = (str) => {
+//     return str.split("").reverse("").join("")
+// }
+// console.log(rvs("omrana"));
+
+// let str = "OMRANA";
+// let rvss = str.split("").reverse().join("")
+// console.log(rvss);
+
+
 
 
 
