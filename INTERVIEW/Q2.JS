@@ -7,11 +7,10 @@
  console.log(reverse);
 
     // WITHOUT REVERSE METHOD
-let strr = "OM RANA";
-let reversing = "";
-
-for(let i = str.length-1; i >= 0; i--) {
-    reversing += str[i];
-}
-console.log(reversing)
+let strr = "OMRANA";
+let revs = "";
+for(let i = strr.length-1; i >=0; i--){
+    revs += strr[i];
+} 
+console.log(revs);
  
