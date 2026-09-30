@@ -10,4 +10,4 @@ function countVowels(str){
 
     return count;
 }
-console.log(countVowels("omrana"));
+console.log(countVowels("SitaRam"));
