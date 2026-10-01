@@ -55,8 +55,8 @@
 
 // console.log(`${name} is ${age} years old and lives in ${city}`)
 
-const greeting = (user) => {
-    console.log(`good morning :${user}`);
+function greeting(user){
+    console.log(`${user} IS A GOOD SOFTWARE ENGINEER`);
     
 }
-greeting("OM")
+greeting("OM RANA")
