@@ -5,6 +5,8 @@
 //     },2000)
 // }
 
+const { use } = require("react");
+
 // const ready = () => {
 //     console.log("YOUR FOOD IS READY SIR!")
 // }
@@ -51,20 +53,48 @@
 // let rvss = str.split("").reverse().join("")
 // console.log(rvss);
 
-function order(n){
-    console.log("YOUR FOOD IS PREPARING SIR");
-    setTimeout(()=>{
-        n();
-    },2000)
-}
+// function order(n){
+//     console.log("YOUR FOOD IS PREPARING SIR");
+//     setTimeout(()=>{
+//         n();
+//     },2000)
+// }
 
-function ready(){
-    console.log("YOUR FOOD IS READY SIR!");
+// function ready(){
+//     console.log("YOUR FOOD IS READY SIR!");
     
-}
+// }
 
-order(ready);
+// order(ready);
 
+// let user = {
+//     fName : "om",
+//     lName : "rana",
+//     add : "saura",
+//     city : "uttarkashi"
+// }
+
+// console.log(user[lName]);
+
+// let arr = [2,4,6,8,10]
+
+// console.log(arr.reduce((acc,val)=>(acc+val)))
+
+// let num = [2,4,6,8,10]
+// let res = num.filter(num=>num>=78)
+// console.log(res)
+
+// const data = () => {
+//  fetch('https://jsonplaceholder.typicode.com/posts/1')
+//  .then(res => res.json())
+//  .then(console.log);
+// }
+// data();
+
+const dataa = fetch('https://jsonplaceholder.typicode.com/posts/1')
+.then(res => res.json())
+dataa.then(json => console.log(json)
+)
 
 
 
