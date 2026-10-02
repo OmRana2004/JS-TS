@@ -29,12 +29,12 @@
 // }
 // console.log(vol("omrana"));
 
-let a = 10;
-let b = 20;
+// let a = 10;
+// let b = 20;
 
-[a,b] = [b,a]
+// [a,b] = [b,a]
 
-console.log(a);
+// console.log(a);
 
 
 
@@ -50,6 +50,14 @@ console.log(a);
 // let str = "OMRANA";
 // let rvss = str.split("").reverse().join("")
 // console.log(rvss);
+
+function add(a,b){
+    return add = a+b;
+}
+console.log(add(20,20));
+
+
+
 
 
 
