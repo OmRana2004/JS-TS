@@ -51,14 +51,19 @@
 // let rvss = str.split("").reverse().join("")
 // console.log(rvss);
 
-function add(a,b){
-    return add = a+b;
+function order(n){
+    console.log("YOUR FOOD IS PREPARING SIR");
+    setTimeout(()=>{
+        n();
+    },2000)
 }
-console.log(add(20,20));
 
+function ready(){
+    console.log("YOUR FOOD IS READY SIR!");
+    
+}
 
-
-
+order(ready);
 
 
 
