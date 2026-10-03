@@ -1,20 +1,28 @@
-const user = {
-    name: "om rana",
-    age: 22,
+// const user = {
+//     name: "om rana",
+//     age: 22,
 
-    greet: function(){
-        console.log(this.age);
-    }
-}
-user.greet();
+//     greet: function(){
+//         console.log(this.age);
+//     }
+// }
+// user.greet();
 
-const code = {
-    lan: "js",
-    new: "ts",
+// const code = {
+//     lan: "js",
+//     new: "ts",
 
-    compil(){
-        console.log(this.lan);
+//     compil(){
+//         console.log(this.lan);
         
-    } 
+//     } 
+// }
+// code.compil()
+
+const course = {
+    cName: "AI_ML",
+    price: 999,
+    courseInst: "harkirat"
 }
-code.compil()
+
+console.log(course.courseInst);
