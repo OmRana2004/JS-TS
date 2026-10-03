@@ -1,4 +1,20 @@
-let arr = [10,20,30,40,50,60];
-let [o,m,r,p,n,a] = arr;
+const user = {
+    name: "om rana",
+    age: 22,
 
-console.log(n);
+    greet: function(){
+        console.log(this.age);
+    }
+}
+user.greet();
+
+const code = {
+    lan: "js",
+    new: "ts",
+
+    compil(){
+        console.log(this.lan);
+        
+    } 
+}
+code.compil()

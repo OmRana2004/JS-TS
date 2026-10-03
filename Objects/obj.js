@@ -42,32 +42,32 @@ const myCoding = [
     {
         langNama: "JAVASCRIPT",
         syntax: "JS",
-        price: 999
+        price: 10
     },
     {
         langNama: "PYTHON",
         syntax: "PY",
-        price: 1999
+        price: 20
     },
     {
         langNama: "JAVA",
         syntax: "JAVA",
-        price: 2999
+        price: 30
     },
     {
         langNama: "RUST",
         syntax: "RS",
-        price: 3999
+        price: 40
     }
 ]
 
-myCoding.forEach((items) => {
-    console.log(items.langNama);
+myCoding.forEach((items)=>{
+    console.log(items.langNama)
 })
-setTimeout(() => {
-        const total = myCoding.reduce((acc,items) => acc+items.price,0)
-        console.log(`YOUR TOTAL VALUE IS: ${total}`)
-    },2000)
+setTimeout(()=> {
+    const total = myCoding.reduce((acc,val)=>acc+val.price,0)
+    console.log(`your total value is ${total}`);
+},2000)
     
 
     // Method Shortand (MODERN AND SHORTER SYNTAX TO WRITE AN FUNCTION) 
