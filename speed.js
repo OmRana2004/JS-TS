@@ -1,13 +1,4 @@
-const start = performance.now();
+let arr = [10,20,30,40,50,60];
+let [o,m,r,p,n,a] = arr;
 
-let total = 0;
-
-for (let i = 0; i < 100000000; i++) {
-    total += i;
-}
-
-console.log("Total:", total);
-
-const end = performance.now();
-
-console.log("Time:", (end - start).toFixed(2), "ms");
+console.log(n);
