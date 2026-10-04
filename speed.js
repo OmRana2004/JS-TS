@@ -22,7 +22,14 @@
 const course = {
     cName: "AI_ML",
     price: 999,
-    courseInstu: "harkirat"
+    details: {
+        courseInstu: "harkirat",
+          vill: "saura"
+    }
 }
+const {cName, details: {vill, courseInstu}} = course
 
-console.log(course.courseInstu);
+console.log(vill, cName, courseInstu);
+
+
+
