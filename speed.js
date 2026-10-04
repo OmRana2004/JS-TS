@@ -22,7 +22,7 @@
 const course = {
     cName: "AI_ML",
     price: 999,
-    courseInst: "harkirat"
+    courseInstu: "harkirat"
 }
 
-console.log(course.courseInst);
+console.log(course.courseInstu);
