@@ -19,17 +19,23 @@
 // }
 // code.compil()
 
-const course = {
-    cName: "AI_ML",
-    price: 999,
-    details: {
-        courseInstu: "harkirat",
-          vill: "saura"
-    }
+// const course = {
+//     cName: "AI_ML",
+//     price: 999,
+//     details: {
+//         courseInstu: "harkirat",
+//           vill: "saura"
+//     }
+// }
+// const {cName, details: {vill, courseInstu}} = course
+
+// console.log(vill, cName, courseInstu);
+
+const user  = {
+    name: 'om',
+    age: 22
 }
-const {cName, details: {vill, courseInstu}} = course
-
-console.log(vill, cName, courseInstu);
-
+const name = user.name
+console.log(name);
 
 
