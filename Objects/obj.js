@@ -109,5 +109,16 @@ const newUser = {
 
 console.log(newUser);
 */
+               // OBJECT MERGE
+const user = {
+    name: "om",
+    age: 22
+}
+const address = {
+    city: "uki",
+    state: "uk"
+}
+const profilt = {...user, ...address};
+console.log(profilt);
 
 
