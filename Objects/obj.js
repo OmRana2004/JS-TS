@@ -38,7 +38,8 @@ console.log(user)
 // }
 // user.greet()
 
-const myCoding = [
+         // THIS
+/*const myCoding = [
     {
         langNama: "JAVASCRIPT",
         syntax: "JS",
@@ -68,6 +69,7 @@ setTimeout(()=> {
     const total = myCoding.reduce((acc,val)=>acc+val.price,0)
     console.log(`your total value is ${total}`);
 },2000)
+*/
     
 
     // Method Shortand (MODERN AND SHORTER SYNTAX TO WRITE AN FUNCTION) 
@@ -79,4 +81,33 @@ setTimeout(()=> {
 // }
 // }
 // user.call()
+
+     // OBJECT REST(..)
+/*
+     const user  = {
+    name: 'om',
+    age: 22,
+    city: "uki",
+    country: "India"
+}
+const {name, ...det} = user
+console.log(name);
+console.log(det);
+*/
+
+      // OBJECT SPREAD
+    // COPY OBJECT
+    /*
+const user = {
+  name: "Om",
+  age: 22
+};
+
+const newUser = {
+  ...user
+};
+
+console.log(newUser);
+*/
+
 
