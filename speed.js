@@ -31,14 +31,6 @@
 
 // console.log(vill, cName, courseInstu);
 
-const user  = {
-    name: 'om',
-    age: 22,
-    city: "uki",
-    country: "India"
-}
-const {name, ...det} = user
-console.log(name);
-console.log(det);
+
 
 
