@@ -151,7 +151,15 @@ console.log(keys);
 */
 
          // OBJECT.VALUES()
-
+/*
+const user = {
+    name: "om",
+    age: 22,
+    city:"uki"
+}
+const values = Object.values(user);
+console.log(values);
+*/
 
 
 
