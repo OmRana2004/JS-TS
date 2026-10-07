@@ -110,6 +110,7 @@ const newUser = {
 console.log(newUser);
 */
                // OBJECT MERGE
+/*
 const user = {
     name: "om",
     age: 22
@@ -120,5 +121,38 @@ const address = {
 }
 const profilt = {...user, ...address};
 console.log(profilt);
+*/
+
+     //OBJECT ITERATION
+/*
+const user = {
+    name: "om",
+    age: 22,
+    city:"uki"
+}
+for(let key in user){
+    console.log(key,user[key])
+}
+*/
+
+           //OBJECT.KEYS()
+/*
+const user = {
+    name: "om",
+    age: 22,
+    city:"uki"
+}
+const keys = Object.keys(user);
+console.log(keys);
+
+// Object.keys(user).forEach((x)=>{
+//     console.log(x)
+// })
+*/
+
+         // OBJECT.VALUES()
+
+
+
 
 
