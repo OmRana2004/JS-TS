@@ -161,6 +161,19 @@ const values = Object.values(user);
 console.log(values);
 */
 
-
+         // OBJECT.ENTRIES()
+/*
+const user = {
+    name: "om",
+    age: 22,
+    city:"uki"
+}
+const entries = Object.entries(user);
+console.log(entries);
+       // YEA DESTRUCTURING HA..
+Object.entries(user).forEach(([keys,values])=> {
+    console.log(keys,values)
+})
+*/
 
 
