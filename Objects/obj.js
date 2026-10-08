@@ -201,6 +201,7 @@ console.log(user);
 */
 
           // OBJECT.SEAL() // in seal we can update the existing property but cannot add or delete the proeprty
+/*
 const user = {
     name : "om",
     age : 22,
@@ -211,4 +212,19 @@ Object.seal(user);
 user.name = "rana"
 user.address = "saura"
 console.log(user);
+*/
 
+          // NESTED OBJECTS
+const user = {
+    name: "om",
+    age: 22,
+    address: {
+        city: "uki",
+        state: "uk"
+    }
+}
+console.log(user.address.city);
+
+
+// const {name,address:{state} } = user//OBJECT
+// console.log(name, state);          //DESTRUCTURING
