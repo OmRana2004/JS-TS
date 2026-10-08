@@ -200,4 +200,15 @@ user.city = "uk"
 console.log(user);
 */
 
+          // OBJECT.SEAL() // in seal we can update the existing property but cannot add or delete the proeprty
+const user = {
+    name : "om",
+    age : 22,
+    city: "uki"
+}
+Object.seal(user);
+
+user.name = "rana"
+user.address = "saura"
+console.log(user);
 
