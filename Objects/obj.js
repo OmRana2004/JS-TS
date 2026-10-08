@@ -176,4 +176,14 @@ Object.entries(user).forEach(([keys,values])=> {
 })
 */
 
+        // OBJECT.HASOWN()
+/*
+const user = {
+    name : "om",
+    age : 22,
+}
+console.log(Object.hasOwn(user,"city"))
+*/
+
+    // OBJECT.FREEZE()
 
