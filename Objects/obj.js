@@ -186,4 +186,18 @@ console.log(Object.hasOwn(user,"city"))
 */
 
     // OBJECT.FREEZE()
+/*
+const user = {
+    name : "om",
+    age : 22,
+    city: "uki"
+}
+Object.freeze(user); // ab is utiliti ne is poora object ko lock kar deya ha so no changes are allowed.
+
+user.name = "rana",
+user.age = 25
+user.city = "uk"
+console.log(user);
+*/
+
 
