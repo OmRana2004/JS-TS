@@ -215,6 +215,7 @@ console.log(user);
 */
 
           // NESTED OBJECTS
+/*          
 const user = {
     name: "om",
     age: 22,
@@ -228,3 +229,12 @@ console.log(user.address.city);
 
 // const {name,address:{state} } = user//OBJECT
 // console.log(name, state);          //DESTRUCTURING
+*/
+
+                // OPTIONAL CHANINING
+
+const user = {
+    name : "om",
+    age: 22
+}
+console.log(user.address?.city);
