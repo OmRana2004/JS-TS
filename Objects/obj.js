@@ -267,6 +267,7 @@ console.log(user1);
 */
 
                  // SHALLOW COPY
+/*
 const user1 = {
     name: "om",
     address: {
@@ -276,6 +277,44 @@ const user1 = {
 const user2 = {...user1}
 user2.address.city = "uk"
 
-console.log(user1.address.city);
-console.log(user2.address.city);
+console.log(user1.address.city); // uk
+console.log(user2.address.city); // uk
+*/
+
+                // DEEP COPY
+// const user1 = {
+//     name: "om",
+//     address: {
+//         city: "uki"
+//     }
+// }
+// const user2 = structuredClone(user1);
+// user2.address.city = "uk"
+
+// console.log(user1.address.city);
+// console.log(user2.address.city);
+
+            // IMPORTANT PRACTICE
+/*
+const user1 = {
+    name: "om",
+    age: 22,
+    city: "uki",
+    greet: function (){
+        console.log("hello user1");
+    }
+};
+
+let user2 = {...user1}
+user2 = {
+    greet() {
+        console.log("hello from user2");
+        
+    }
+}
+user1.greet()
+user2.greet()
+*/
+
+
 
