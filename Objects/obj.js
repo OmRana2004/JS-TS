@@ -1,5 +1,7 @@
                                     //OBJECTS LITERALS
 
+const { use } = require("react");
+
        /*                             
 const user = {
     name: "om",
@@ -232,9 +234,48 @@ console.log(user.address.city);
 */
 
                 // OPTIONAL CHANINING
-
+/*
 const user = {
     name : "om",
     age: 22
 }
 console.log(user.address?.city);
+*/
+
+           // OBJ REFERENCE
+/*
+const user1 = {
+    name: "om",
+    age: 22
+}
+const user2 = user1;
+user2.name = "rana"
+console.log(user1);
+console.log(user2);
+*/
+
+                 //COPYING OBJECT
+/*
+const user1 = {
+    name: "om",
+    age: 22
+}
+const user2 = {...user1}
+user2.age = 25
+console.log(user2);
+console.log(user1);
+*/
+
+                 // SHALLOW COPY
+const user1 = {
+    name: "om",
+    address: {
+        city: "uki"
+    }
+}
+const user2 = {...user1}
+user2.address.city = "uk"
+
+console.log(user1.address.city);
+console.log(user2.address.city);
+
