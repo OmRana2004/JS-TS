@@ -2,7 +2,9 @@ function checkInventory() {
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log("CHECKING INVENTORY...");
-      resolve();
+
+    //   resolve();
+    reject(new Error("failed to check inventory"))
     }, 2000);
   });
   return promise;
@@ -12,7 +14,9 @@ function createOrder() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log("CREATING ORDER...");
-      resolve();
+
+    //   resolve();
+    reject(new Error("failed to create order"))
     }, 1000);
   });
 }
@@ -35,7 +39,16 @@ function sendInvoice() {
 }
 
 function main() {
-  checkInventory().then(createOrder).then(chargePayment).then(sendInvoice);
+  checkInventory()
+  .catch((err) => {
+    console.log("err",err);
+  })
+  .then(createOrder)
+   .catch((err) => {
+    console.log("err",err);
+  })
+  .then(chargePayment)
+  .then(sendInvoice)
 
   console.log("Other Request Processing");
 }
