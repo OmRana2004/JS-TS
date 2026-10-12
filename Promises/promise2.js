@@ -54,3 +54,24 @@ function main() {
 }
 
 main();
+
+// const loginP = new Promise((resolve, reject)=> {
+//     const loginS = true;
+
+//     if(loginS) {
+//         resolve("WELCOME, OM!")
+//     }else {
+//         reject("INVALID CREDENTIALS")
+//     }
+// });
+
+// loginP.then((mes) => {
+//     console.log(mes);
+// })
+// .catch((err) => {
+//     console.log(err);
+// })
+// .finally(()=>{
+//     console.log("LOGIN ATTEMPT FINISHED");
+    
+// })
