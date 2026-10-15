@@ -91,11 +91,20 @@ const { use } = require("react");
 // }
 // data();
 
-const dataa = fetch('https://jsonplaceholder.typicode.com/posts/1')
-.then(res => res.json())
-dataa.then(json => console.log(json)
-)
+// const dataa = fetch('https://jsonplaceholder.typicode.com/posts/10')
+// .then(res => res.json())
+// dataa.then(json => console.log(json)
+// )
 
+console.log("A");
+
+setTimeout(() => {
+  console.log("B");
+
+  Promise.resolve().then(() => {
+    console.log("C");
+  });
+}, 0);
 
 
 
