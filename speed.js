@@ -31,7 +31,24 @@
 
 // console.log(vill, cName, courseInstu);
 
+// function getData() {
+//     return new Promise((reslove, reject) => {
+//         reslove("Hello OM")
+//     });
+// }
+// getData().then((res) => {
+//     console.log(res);
+// })
 
+async function getData() {
+    return "Hello Om"
+}
+ 
+async function main() {
+    const res = await getData()
+    console.log(res);
+}
+main()
 
 
 
