@@ -7,5 +7,5 @@ const people = [
     { name: "sita", age: 24},
 ];
 
-const res = people.filter(x=>x.age > 40).map(x=> x.name)
+const res = people.filter(x=>x.age > 40).map(x=>x.name)
 console.log(res);
