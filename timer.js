@@ -96,14 +96,25 @@ const { use } = require("react");
 // dataa.then(json => console.log(json)
 // )
 
-console.log("A");
+// console.log("A");
 
-setTimeout(() => {
-  console.log("B");
+// setTimeout(() => {
+//   console.log("B");
 
-  Promise.resolve().then(() => {
-    console.log("C");
-  });
-}, 0);
+//   Promise.resolve().then(() => {
+//     console.log("C");
+//   });
+// }, 0);
     
+
+const promise = new Promise((resolve,reject) => {
+  reject(new Error("Failed To Create Order"))
+})
+.then(() =>{
+  console.log("PRACTICING PROMISE");
+})
+.catch((e)=> {
+  console.log(e.message);
+  
+})
 
