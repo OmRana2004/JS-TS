@@ -110,11 +110,9 @@ const { use } = require("react");
 const promise = new Promise((resolve,reject) => {
   reject(new Error("Failed To Create Order"))
 })
-.then(() =>{
+.then(() => {
   console.log("PRACTICING PROMISE");
 })
-.catch((e)=> {
+.catch((e) => {
   console.log(e.message);
-  
 })
-
