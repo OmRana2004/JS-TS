@@ -40,20 +40,30 @@
 //     console.log(res);
 // })
 
-async function getData() {
-    return "Hello Om"
-}
+// async function getData() {
+//     return "Hello Om"
+// }
  
-async function main() {
-    const res = await getData()
-    console.log(res);
+// async function main() {
+//     const res = await getData()
+//     console.log(res);
+// }
+// main()
+
+const vol = (str) => {
+    let count = 0
+    for(let i = 0; i <= str.length; i++){
+        if("aeiouAEIOU".includes(str[i])){
+            count++
+        }
+    }
+    return count;
 }
-main()
+console.log(vol("aeu"));
 
+    
+    
+    
 
-
-
-
-
-
+ 
 
