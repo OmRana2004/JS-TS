@@ -67,16 +67,20 @@ const { use } = require("react");
 
 // console.log(user2.age);
 
-function Users(name,age) {
-    this.name = name
-    this.age = age
-}
+// function Users(name,age) {
+//     this.name = name
+//     this.age = age
+// }
 
-const admin = new Users("om",22)
-const user =  Users("akshat",23)
+// const admin = new Users("om",22)
+// const user =  new Users("akshat",23)
 
-console.log(user);
-console.log(admin.age);
+// console.log(user);
+// console.log(admin.age);
+
+
+
+
  
     
     

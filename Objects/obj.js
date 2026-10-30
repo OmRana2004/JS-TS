@@ -1,7 +1,5 @@
                                     //OBJECTS LITERALS
 
-const { use } = require("react");
-
        /*                             
 const user = {
     name: "om",
@@ -176,19 +174,19 @@ console.log(entries);
 Object.entries(user).forEach(([keys,values])=> {
     console.log(keys,values)
 })
-*/
+................................................................................*/
 
         // OBJECT.HASOWN()
-/*
+/*......................................................................................
 const user = {
     name : "om",
     age : 22,
 }
 console.log(Object.hasOwn(user,"city"))
-*/
+......................................................................................*/
 
     // OBJECT.FREEZE()
-/*
+/*............................................................................
 const user = {
     name : "om",
     age : 22,
@@ -200,10 +198,10 @@ user.name = "rana",
 user.age = 25
 user.city = "uk"
 console.log(user);
-*/
+.................................................................................*/
 
           // OBJECT.SEAL() // in seal we can update the existing property but cannot add or delete the proeprty
-/*
+/*........................................................................................
 const user = {
     name : "om",
     age : 22,
@@ -214,10 +212,10 @@ Object.seal(user);
 user.name = "rana"
 user.address = "saura"
 console.log(user);
-*/
+...............................................................................................*/
 
           // NESTED OBJECTS
-/*          
+/*..............................................................................................          
 const user = {
     name: "om",
     age: 22,
@@ -228,10 +226,10 @@ const user = {
 }
 console.log(user.address.city);
 
-
-// const {name,address:{state} } = user//OBJECT
-// console.log(name, state);          //DESTRUCTURING
-*/
+             //OBJECT  DESTRUCTURING
+// const {name,address:{state} } = user
+// console.log(name, state);          
+.................................................................................*/
 
                 // OPTIONAL CHANINING
 /*
@@ -240,10 +238,10 @@ const user = {
     age: 22
 }
 console.log(user.address?.city);
-*/
+.................................................................*/
 
            // OBJ REFERENCE
-/*
+/*.......................................................................
 const user1 = {
     name: "om",
     age: 22
@@ -252,10 +250,40 @@ const user2 = user1;
 user2.name = "rana"
 console.log(user1);
 console.log(user2);
+.............................................................................*/
+
+                       // OBJECT+ARRAY
+
+                        // Object Ke Andar Array
+const user ={
+    name: "Sita_Ram",
+    jap:["jai","hanuman"]
+}
+const {name,jap:[first,second]} = user
+console.log(name,first,second);// Sita_ram, jai, hanuman
+
+                        // Array kea Andr Object
+/*const user = [
+    {
+        name: "Sita",
+        age: 22
+    },
+    {
+        name: "ram",
+        age: 28
+    }
+];
+
+const [
+    {name:firstName, age:firstAge},
+    {name:secondName, age:secondaAge},
+] = user
+console.log(firstName,secondaAge);// Sita, 28
 */
 
+
                  //COPYING OBJECT
-/*
+/*.............................................................................
 const user1 = {
     name: "om",
     age: 22
@@ -264,10 +292,11 @@ const user2 = {...user1}
 user2.age = 25
 console.log(user2);
 console.log(user1);
-*/
+...................................................................................*/
 
-                 // SHALLOW COPY
-/*
+                 // SHALLOW COPY AND DEEP COPY
+/*............................................................................................
+                           //Sallow Copy
 const user1 = {
     name: "om",
     address: {
@@ -279,20 +308,21 @@ user2.address.city = "uk"
 
 console.log(user1.address.city); // uk
 console.log(user2.address.city); // uk
-*/
 
-                // DEEP COPY
-// const user1 = {
-//     name: "om",
-//     address: {
-//         city: "uki"
-//     }
-// }
-// const user2 = structuredClone(user1);
-// user2.address.city = "uk"
 
-// console.log(user1.address.city);
-// console.log(user2.address.city);
+                // Deep Copy
+const user1 = {
+    name: "om",
+    address: {
+        city: "uki"
+    }
+}
+const user2 = structuredClone(user1);
+user2.address.city = "uk"
+
+console.log(user1.address.city); //uki
+console.log(user2.address.city); //uk
+..................................................................*/
 
             // IMPORTANT PRACTICE
 /*
@@ -316,7 +346,24 @@ user1.greet()
 user2.greet()
 */
 
+const user1 = {
+    name: "om",
+    age: 22,
+    city: "uki",
+    greet: function (){
+        console.log("hello from user1");
+    }
+};
 
+let user2 = {...user1}
+user2 = {
+    greet() {
+        console.log("hello from user2");
+        
+    }
+}
+user1.greet()
+user2.greet()
 
 
 
