@@ -18,15 +18,31 @@ user1.greet()
 user2.greet()
 */
                                   //  With prototype — method shared
-function User(name) {
-    this.name = name
+// function User(name) {
+//     this.name = name
+// }
+
+// User.prototype.greet = function(){
+//     console.log(`Hello, ${this.name}`);
+// }
+
+// const user1 = new User("OM")
+// const user2 = new User("RAM")
+
+// user2.greet()
+
+function Student(name) {
+    this.name = name;
 }
 
-User.prototype.greet = function(){
-    console.log(`Hello, ${this.name}`);
-}
+Student.prototype.study = function() {
+    console.log(`${this.name} is studying`);
+};
 
-const user1 = new User("OM")
-const user2 = new User("RAM")
+const s1 = new Student("Om");
+const s2 = new Student("Rahul");
 
-user2.greet()
+s1.study()
+
+console.log(s1.study === s2.study);
+
