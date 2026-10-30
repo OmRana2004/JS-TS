@@ -44,5 +44,25 @@ const s2 = new Student("Rahul");
 
 s1.study()
 
-console.log(s1.study === s2.study);
+// console.log(s1.study === s2.study);
+console.log(s1.hasOwnProperty("name"));
+console.log(s1.hasOwnProperty("study()"));
+
+
+const num = 100;
+    console.log(num);
+    console.log(typeof(num));
+
+const res = num.toString()
+    console.log(res)
+    console.log(typeof(res));
+
+
+
+
+
+
+
+
+
 
