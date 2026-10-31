@@ -2,7 +2,6 @@
 //     name: "om rana",
 //     age: 22,
 
-const { use } = require("react");
 
 //     greet: function(){
 //         console.log(this.age);
@@ -78,6 +77,66 @@ const { use } = require("react");
 // console.log(user);
 // console.log(admin.age);
 
+// const person = {
+//   greet: function() {
+//     console.log("Hello!");
+//   }
+// };
+
+// const user = Object.create(person);
+
+// user.name = "Om";
+
+// user.greet();
+
+// const person = {
+//     name: "OM RNA",
+//     greet(){
+//         console.log(`Hello,${person.name}`);
+//     }
+// }
+// person.greet()
+
+// const User = function(name,age){
+//     this.name=name
+//     this.age=age
+// }
+// const u1 = new User("om",22)
+// const u2 = new User("ram",32)
+
+// console.log(u1.name);
+// console.log(u2.name,u2.age);
+
+// const user2 = {
+//   name: "Rahul",
+//   greet() {
+//     console.log(`Hello, ${this.name}`);
+//   }
+// };
+
+// user2.greet()
+
+// function User (name){
+//     this.name=name
+// }
+// User.prototype.greet=function(){
+//     console.log(`Welcome, ${this.name}`);
+    
+// }
+// const u1 = new User("OM")
+// const u2 = new User("RAM")
+// const u3 = new User("SITA")
+// u1.greet()
+// u2.greet()
+// u3.greet()
+
+
+
+const user = {
+ name: "om",
+ age: 22
+}
+console.log(user.__proto__);
 
 
 
