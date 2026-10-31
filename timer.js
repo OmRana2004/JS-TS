@@ -117,18 +117,62 @@ const { use } = require("react");
 //   console.log(e.message);
 // })
 
-let val;
-const promise = new Promise((re, rj) => {
-  val = true;
-  if(val === true){
-  re("PROMISE IS RESOLVED"); 
-  }else{
-  rj(new Error("PROMISE REJECTED")); 
-  }
-});
+// let val;
+// const promise = new Promise((re, rj) => {
+//   val = true;
+//   if(val === true){
+//   re("PROMISE IS RESOLVED"); 
+//   }else{
+//   rj(new Error("PROMISE REJECTED")); 
+//   }
+// });
 
-promise.then((res)=> {
-  console.log(res);
-}).catch((err)=> {
+// promise.then((res)=> {
+//   console.log(res);
+// }).catch((err)=> {
+//   console.log(err.message);
+// })
+             //DIFFERENCE CHECKER 
+// let val;
+// const promise = new Promise((re,rj)=>{
+//   try{
+//     val = OM
+//     if(val===true){
+//     re("PROMISE RESOLVED")
+//     }else{
+//       rj(new Error("PROMISE IS REJECTED"))
+//     }
+//   } catch(error){
+//       rj(error)
+//   }
+// })
+// .then((res)=>{
+//   console.log(res);
+// }).catch((err)=>{
+//   console.log(err.message);
+// })
+
+function check(){
+  return new Promise((re,rj)=>{
+    setTimeout(()=>{
+      console.log("CHECKING...CHECKING..CHECKING");
+      rj(new Error("we are rejecting"))
+    },2000)
+  })
+}
+
+function pass(){
+  return new Promise((re,rj)=>{
+    setTimeout(()=>{
+      console.log("PASSING..PASSING...PASSING");
+      re("we are passing")
+    },3000)
+  })
+}
+check().catch((err)=>{
   console.log(err.message);
+}).then(pass)
+.then((res)=>{
+  console.log(res);
+  
 })
