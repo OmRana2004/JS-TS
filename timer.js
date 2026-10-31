@@ -107,12 +107,28 @@ const { use } = require("react");
 // }, 0);
     
 
-const promise = new Promise((resolve,reject) => {
-  reject(new Error("Failed To Create Order"))
-})
-.then(() => {
-  console.log("PRACTICING PROMISE");
-})
-.catch((e) => {
-  console.log(e.message);
+// const promise = new Promise((resolve,reject) => {
+//   reject(new Error("Failed To Create Order"))
+// })
+// .then(() => {
+//   console.log("PRACTICING PROMISE");
+// })
+// .catch((e) => {
+//   console.log(e.message);
+// })
+
+let val;
+const promise = new Promise((re, rj) => {
+  val = true;
+  if(val === true){
+  re("PROMISE IS RESOLVED"); 
+  }else{
+  rj(new Error("PROMISE REJECTED")); 
+  }
+});
+
+promise.then((res)=> {
+  console.log(res);
+}).catch((err)=> {
+  console.log(err.message);
 })
