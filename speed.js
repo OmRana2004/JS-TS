@@ -132,11 +132,21 @@
 
 
 
-const user = {
- name: "om",
- age: 22
+const o = {
+    fname: "om",
+    lname: "rana",
+    fullname: {
+        fullname: "om_rana"
+    }
 }
-console.log(user.__proto__);
+
+const c = {...o} 
+
+c.lname = "OM"
+console.log("THIS IS ORIGINAL: ",o);
+console.log("THIS IS COPY: ",c);
+
+
 
 
 
