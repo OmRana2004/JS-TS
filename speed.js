@@ -132,19 +132,26 @@
 
 
 
-const o = {
-    fname: "om",
-    lname: "rana",
-    fullname: {
-        fullname: "om_rana"
-    }
-}
+// const o = {
+//     fname: "om",
+//     lname: "rana",
+//     fullname: {
+//         fullname: "om_rana"
+//     }
+// }
 
-const c = {...o} 
+// const c = {...o} 
 
-c.lname = "OM"
-console.log("THIS IS ORIGINAL: ",o);
-console.log("THIS IS COPY: ",c);
+// c.lname = "OM"
+// console.log("THIS IS ORIGINAL: ",o);
+// console.log("THIS IS COPY: ",c);
+
+let arr = [1,2,3,4,5,6,7,8,9,10]
+arr.forEach((e,i)=>{
+    console.log(e,i);
+    
+})
+
 
 
 
