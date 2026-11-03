@@ -152,30 +152,50 @@ const { use } = require("react");
 //   console.log(err.message);
 // })
 
-function check(){
-  return new Promise((re,rj)=>{
-    setTimeout(()=>{
-      console.log("CHECKING...CHECKING..CHECKING");
-      rj(new Error("we are rejecting"))
-    },2000)
-  })
-}
+// function check(){
+//   return new Promise((re,rj)=>{
+//     setTimeout(()=>{
+//       console.log("CHECKING...CHECKING..CHECKING");
+//       rj(new Error("we are rejecting"))
+//     },2000)
+//   })
+// }
 
-function pass(){
-  return new Promise((re,rj)=>{
-    setTimeout(()=>{
-      console.log("PASSING..PASSING...PASSING");
-      re("we are passing")
-    },3000)
-  })
-}
-check().catch((err)=>{
-  console.log(err.message);
-}).then(pass)
-.then((res)=>{
-  console.log(res);
+// function pass(){
+//   return new Promise((re,rj)=>{
+//     setTimeout(()=>{
+//       console.log("PASSING..PASSING...PASSING");
+//       re("we are passing")
+//     },3000)
+//   })
+// }
+// check().catch((err)=>{
+//   console.log(err.message);
+// }).then(pass)
+// .then((res)=>{
+//   console.log(res);
   
-})
+// })
+
+// deconstruct
+
+// let arr = ["om","rana","akshat","bist"]
+// let [n,s,f,fs] = arr
+// console.log(fs,f,s,n);
+
+// SPREAD
+
+// const arr = ["om","rana","akshat","bist"]
+// console.log(arr);
+// console.log(...arr);
+
+// REST
+const [fn,...arr] = ["om","rana","akshat","bist"]
+console.log(arr);
+console.log(fn);
+
+
+
 
 
 
