@@ -190,10 +190,42 @@ const { use } = require("react");
 // console.log(...arr);
 
 // REST
-const [fn,...arr] = ["om","rana","akshat","bist"]
-console.log(arr);
-console.log(fn);
+// const [fn,...arr] = ["om","rana","akshat","bist"]
+// console.log(arr);
+// console.log(fn);
 
+// let obj = {
+//     name: "om",
+//     age: 22,
+//     city: "uk",
+//     state: "utt"
+// }
+
+// const entries = Object.entries(obj)
+// console.log(entries);
+// entries.forEach(([p,k]) =>{
+//     console.log(p,k);
+    
+// })
+
+ let user1 = {
+    name: "om",
+    age: 22,
+    city: "uk",
+    state: "utt"
+}
+ let user2 = {
+    name: "akshat",
+    age: 23,
+    city: "dhe",
+    state: "utt"
+}
+
+let alluser = {...user1, ...user2}
+console.log(alluser);
+
+
+console.log(Object.hasOwn(alluser,"city"));
 
 
 
