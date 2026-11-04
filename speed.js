@@ -146,11 +146,42 @@
 // console.log("THIS IS ORIGINAL: ",o);
 // console.log("THIS IS COPY: ",c);
 
-let arr = [1,2,3,4,5,6,7,8,9,10]
-arr.forEach((e,i)=>{
-    console.log(e,i);
+// let arr = [1,2,3,4,5,6,7,8,9,10]
+// arr.forEach((e,i)=>{
+//     console.log(e,i);
     
-})
+// })
+
+function vou(str){
+    let count = 0
+    for(let i = 0; i<str.length; i++){
+        if("aeiouAEIOU".includes(str[i])){
+            count++
+        }
+    }
+    return count
+}
+console.log(vou("omrana"));
+
+let str = "omrana";
+let revss = ""
+for(let i =  str.length-1; i>=0; i--){
+    revss += str[i]
+}
+console.log(revss);
+
+function revs(str){
+    let rvs = ""
+    for(let i = str.length-1; i>=0; i--){
+        rvs += str[i]
+    }
+    return rvs
+}
+console.log(revs("RACECAR"));
+
+
+
+
 
 
 
