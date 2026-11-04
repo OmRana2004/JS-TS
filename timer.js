@@ -208,24 +208,67 @@ const { use } = require("react");
     
 // })
 
- let user1 = {
-    name: "om",
-    age: 22,
-    city: "uk",
-    state: "utt"
-}
- let user2 = {
-    name: "akshat",
-    age: 23,
-    city: "dhe",
-    state: "utt"
-}
+//  let user1 = {
+//     name: "om",
+//     age: 22,
+//     city: "uk",
+//     state: "utt"
+// }
+//  let user2 = {
+//     name: "akshat",
+//     age: 23,
+//     city: "dhe",
+//     state: "utt"
+// }
 
-let alluser = {...user1, ...user2}
-console.log(alluser);
+// let alluser = {...user1, ...user2}
+// console.log(alluser);
 
 
-console.log(Object.hasOwn(alluser,"city"));
+// console.log(Object.hasOwn(alluser,"city"));
+
+// const user = {
+//     name: "om",
+//     age: 22,
+//     address: {
+//         city: "uttarkashi"
+//     }
+// }
+// Object.freeze(user)
+// user.age = 25
+// user.address.city = "dehradun"
+// console.log(user);
+
+// const user = {
+//     name: "om",
+//     age: 22,
+//     city: "uttarkashi",
+//     hobbies: ["cricket", "cooking", "guitar"]
+// }
+// console.log(user.hobbies[2]);
+
+const arr = [
+    {
+        name: "om",
+        age: "22"
+    },
+    {
+        name: "om",
+        age: "22"
+    },
+    {
+        name: "om",
+        age: "22"
+    },
+]
+const [
+    {name: fname, age: fage},
+    {name: sname, age: sage}
+] = arr
+console.log(fname);
+
+
+
 
 
 
