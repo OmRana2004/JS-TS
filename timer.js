@@ -247,25 +247,30 @@ const { use } = require("react");
 // }
 // console.log(user.hobbies[2]);
 
-const arr = [
-    {
-        name: "om",
-        age: "22"
-    },
-    {
-        name: "om",
-        age: "22"
-    },
-    {
-        name: "om",
-        age: "22"
-    },
-]
-const [
-    {name: fname, age: fage},
-    {name: sname, age: sage}
-] = arr
-console.log(fname);
+// const arr = [
+//     {
+//         name: "om",
+//         age: "22"
+//     },
+//     {
+//         name: "om",
+//         age: "22"
+//     },
+//     {
+//         name: "om",
+//         age: "22"
+//     },
+// ]
+// const [
+//     {name: fname, age: fage},
+//     {name: sname, age: sage}
+// ] = arr
+// console.log(fname);
+
+
+
+
+
 
 
 
