@@ -267,9 +267,21 @@ const { use } = require("react");
 // ] = arr
 // console.log(fname);
 
+class Phone {
+    constructor(brand){
+        this.brand = brand
+    }
 
+showBrand() {
+    console.log(`YOU ARE USING ${this.brand}`);
+}
+}
 
+const p1 = new Phone("APPLE")
+const p2 = new Phone("SAMSUNG")
 
+p1.showBrand()
+p2.showBrand()
 
 
 
