@@ -283,6 +283,11 @@ const p2 = new Phone("SAMSUNG")
 p1.showBrand()
 p2.showBrand()
 
+setTimeout(()=>{
+    console.log("hear I am");
+    
+},5000)
+
 
 
 
