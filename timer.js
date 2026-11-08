@@ -267,26 +267,62 @@ const { use } = require("react");
 // ] = arr
 // console.log(fname);
 
-class Phone {
-    constructor(brand){
-        this.brand = brand
+// class Phone {
+//     constructor(brand){
+//         this.brand = brand
+//     }
+
+// showBrand() {
+//     console.log(`YOU ARE USING ${this.brand}`);
+// }
+// }
+
+// const p1 = new Phone("APPLE")
+// const p2 = new Phone("SAMSUNG")
+
+// p1.showBrand()
+// p2.showBrand()
+
+let str = "RACECAR"
+let revs = ""
+
+for(let i = str.length-1; i >=0; i--){
+    revs += str[i]
+}
+console.log(revs===str);
+
+const vol = (str)=> {
+    let count = 0;
+    for(let i = 0; i<str.length; i++){
+        if("aeiouAEIOU".includes(str[i])){
+            count++
+        }
+        
     }
-
-showBrand() {
-    console.log(`YOU ARE USING ${this.brand}`);
+    return count;
 }
-}
+console.log(vol("omrana"))
 
-const p1 = new Phone("APPLE")
-const p2 = new Phone("SAMSUNG")
+let a = 10;
+let b = 200;
 
-p1.showBrand()
-p2.showBrand()
+[a,b] = [b,a]
+console.log(a);
 
-setTimeout(()=>{
-    console.log("hear I am");
-    
-},5000)
+const people = [
+    { name: "om", age: 62},
+    { name: "ram", age: 23},
+    { name: "sita", age: 84},
+    { name: "sita", age: 24},
+];
+
+const arr = people.filter(x=>x.age > 40).map(x=>x.name)
+
+console.log(arr);
+
+
+
+
 
 
 
