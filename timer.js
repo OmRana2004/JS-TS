@@ -322,6 +322,7 @@ const { use } = require("react");
 console.log("FIRST");
 setTimeout(()=>{
     console.log("DONE!");
+    console.log(Math.PI)
 },2000)
     new Promise((reslove,reject)=>{
     reslove("Reslove Promise")
