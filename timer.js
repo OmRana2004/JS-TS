@@ -331,7 +331,11 @@ setTimeout(()=>{
     
 })
 
-
+for(let i = 0; i<10; i++){
+    const random = Math.PI
+    console.log(random);
+    
+}
 
 
 

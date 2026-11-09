@@ -10,3 +10,4 @@ const chai = {
 }
 
 console.log(Object.getOwnPropertyDescriptors(chai, "name"));
+
