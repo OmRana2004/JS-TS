@@ -283,42 +283,56 @@ const { use } = require("react");
 // p1.showBrand()
 // p2.showBrand()
 
-let str = "RACECAR"
-let revs = ""
+// let str = "RACECAR"
+// let revs = ""
 
-for(let i = str.length-1; i >=0; i--){
-    revs += str[i]
-}
-console.log(revs===str);
+// for(let i = str.length-1; i >=0; i--){
+//     revs += str[i]
+// }
+// console.log(revs===str);
 
-const vol = (str)=> {
-    let count = 0;
-    for(let i = 0; i<str.length; i++){
-        if("aeiouAEIOU".includes(str[i])){
-            count++
-        }
+// const vol = (str)=> {
+//     let count = 0;
+//     for(let i = 0; i<str.length; i++){
+//         if("aeiouAEIOU".includes(str[i])){
+//             count++
+//         }
         
-    }
-    return count;
-}
-console.log(vol("omrana"))
+//     }
+//     return count;
+// }
+// console.log(vol("omrana"))
 
-let a = 10;
-let b = 200;
+// let a = 10;
+// let b = 200;
 
-[a,b] = [b,a]
-console.log(a);
+// [a,b] = [b,a]
+// console.log(a);
 
-const people = [
-    { name: "om", age: 62},
-    { name: "ram", age: 23},
-    { name: "sita", age: 84},
-    { name: "sita", age: 24},
-];
+// const people = [
+//     { name: "om", age: 62},
+//     { name: "ram", age: 23},
+//     { name: "sita", age: 84},
+//     { name: "sita", age: 24},
+// ];
 
-const arr = people.filter(x=>x.age > 40).map(x=>x.name)
+// const arr = people.filter(x=>x.age > 40).map(x=>x.name)
+// console.log(people);
 
-console.log(arr);
+console.log("FIRST");
+setTimeout(()=>{
+    console.log("DONE!");
+},2000)
+    new Promise((reslove,reject)=>{
+    reslove("Reslove Promise")
+}).then((res) => {
+    console.log(res);
+    
+})
+
+
+
+
 
 
 
