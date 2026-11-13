@@ -152,38 +152,47 @@
     
 // })
 
-function vou(str){
-    let count = 0
-    for(let i = 0; i<str.length; i++){
-        if("aeiouAEIOU".includes(str[i])){
-            count++
-        }
-    }
-    return count
+// function vou(str){
+//     let count = 0
+//     for(let i = 0; i<str.length; i++){
+//         if("aeiouAEIOU".includes(str[i])){
+//             count++
+//         }
+//     }
+//     return count
+// }
+// console.log(vou("omrana"));
+
+// let str = "omrana";
+// let revss = ""
+// for(let i =  str.length-1; i>=0; i--){
+//     revss += str[i]
+// }
+// console.log(revss);
+
+// function revs(str){
+//     let rvs = ""
+//     for(let i = str.length-1; i>=0; i--){
+//         rvs += str[i]
+//     }
+//     return rvs
+// }
+// console.log(revs("RACECAR"));
+
+const User = [];
+
+let users = {
+    name: "om",
+    age: 22,
+    village: "saura"
 }
-console.log(vou("omrana"));
 
-let str = "omrana";
-let revss = ""
-for(let i =  str.length-1; i>=0; i--){
-    revss += str[i]
-}
-console.log(revss);
+User.push(users)
 
-function revs(str){
-    let rvs = ""
-    for(let i = str.length-1; i>=0; i--){
-        rvs += str[i]
-    }
-    return rvs
-}
-console.log(revs("RACECAR"));
+console.log(User);
 
-
-
-
-
-
+const res = User.map((x)=> Object.values(x));
+console.log(res);
 
 
 
