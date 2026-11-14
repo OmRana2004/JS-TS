@@ -194,6 +194,22 @@ console.log(User);
 const res = User.map((x)=> Object.values(x));
 console.log(res);
 
+class Users {
+    constructor(name,age){
+        this.name=name
+        this.age=age
+    }
+    info(){
+        console.log(`my name is ${this.name}, my age is ${this.age}`);
+    }
+}
+
+const user1 = new Users("om", 22)
+const user2 = new Users("RAM", 108)
+
+user1.info()
+user2.info()
+
 
 
 
