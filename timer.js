@@ -319,23 +319,50 @@ const { use } = require("react");
 // const arr = people.filter(x=>x.age > 40).map(x=>x.name)
 // console.log(people);
 
-console.log("FIRST");
-setTimeout(()=>{
-    console.log("DONE!");
-    console.log(Math.PI)
-},2000)
-    new Promise((reslove,reject)=>{
-    reslove("Reslove Promise")
-}).then((res) => {
-    console.log(res);
+// console.log("FIRST");
+// setTimeout(()=>{
+//     console.log("DONE!");
+//     console.log(Math.PI)
+// },2000)
+//     new Promise((reslove,reject)=>{
+//     reslove("Reslove Promise")
+// }).then((res) => {
+//     console.log(res);
     
-})
+// })
 
-for(let i = 0; i<10; i++){
-    const random = Math.PI
-    console.log(random);
+// for(let i = 0; i<10; i++){
+//     const random = Math.PI
+//     console.log(random);
     
+// }
+/*************************************************************************************/
+// const user = {
+//     name: "om",
+//     age: 22,
+//     greet(){
+//         console.log(`Hello- ${this.name},Your age is- ${this.age}`);
+//     }
+// }
+// user.greet()
+
+function User(name,age){
+   this.name = name
+   this.age = age,
+   
+   User.prototype.greet = () => {
+    console.log(`hello your name is- ${this.name}, And your age is- ${this.age}`);
+    
+   }
 }
+const user1 = new User("om",22)
+const user2 = new User("ram",108)
+
+user1.greet()
+user2.greet()
+
+
+
 
 
 

@@ -34,6 +34,31 @@ const user2 = new User("RAM")
 user2.greet()
 ....................................................................................*/
 
+                        // Why not to use arrow function while using prototype or constructor
+/*...............................................................................................
+    function User(name,age){
+   this.name = name
+   this.age = age,
+   
+   User.prototype.greet = () => {
+    console.log(`hello your name is- ${this.name}, And your age is- ${this.age}`);
+    
+   }
+}
+const user1 = new User("om",22)
+const user2 = new User("ram",108)
+
+user1.greet()
+user2.greet()
+          // both user1.greet() and user2.greet() will print "ram" and 108, Because-
+// 1. Arrow functions do not have their own this: Instead of looking at the object that called the method (user1 or user2), 
+//an arrow function permanently locks onto the this value from the scope where it was created.
+//2. Overwriting inside the constructor: Because User.prototype.greet = () => ... is placed inside the User constructor, it gets overwritten every time new User() runs:
+	//• When new User("om", 22) runs, User.prototype.greet is bound to user1.
+	//• When new User("ram", 108) runs, User.prototype.greet is overwritten and permanently bound to user2.
+	//• If you defined the arrow function outside the constructor, this would point to the global window object, resulting in undefined for both name and age.
+  ..............................................................................................................................*/
+
                          //PROTOTYPE_CHAIN
 
 function Student(name) {
@@ -58,15 +83,4 @@ console.log("toString" in s1);// true
 
     //hasOwnProperty() → Sirf object ki khud ki property check karta hai.
 console.log(s1.hasOwnProperty("toString"));// false
-
-
-
-
-
-
-
-
-
-
-
 
