@@ -211,9 +211,10 @@ user1.info()
 user2.info()
 
 
+console.log(((a,b)=>a+b)(10,20));
 
 
- 
+
     
     
     

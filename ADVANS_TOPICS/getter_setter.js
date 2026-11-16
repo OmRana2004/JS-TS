@@ -21,3 +21,39 @@ class User {
 
 const om = new User("om@12334", "abc")
 console.log(om.email);
+console.log(om.password);
+
+/*************************************************************************************************************************/
+
+// const product = {
+//   price: 100,
+
+//   get price() {
+//     return this._price;
+//   },
+
+//   set price(value) {
+//     this._price = value * 2;
+//   }
+// };
+
+// product.price = 500;
+
+// console.log(product.price);
+
+const product = {
+    price : 100,
+
+    get price() {
+        return this._price;
+    },
+
+    set price(value) {
+        this._price = value*2
+    }
+};
+
+product.price = 500
+
+console.log(product.price);
+
