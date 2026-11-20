@@ -1,0 +1,86 @@
+Phase 1 — TypeScript Foundations
+Start here
+
+Understand how TypeScript adds a type system to JavaScript.
+1. What is TypeScript? How does it work internally?
+2. TypeScript vs JavaScript
+3. TypeScript compiler (tsc)
+4. Type annotations
+5. Type inference
+6. Basic types: string, number, boolean, null, undefined
+7. Arrays and tuples
+8. Objects and nested objects
+9. Functions and return types
+10. any, unknown, never, void
+    
+    Phase 2 — Core Type System
+11. Type aliases (type)
+12. Interfaces (interface)
+13. Union types
+14. Intersection types
+15. Literal types
+16. Optional and readonly properties
+17. Type narrowing
+18. Type guards
+19. Discriminated unions
+20. Type compatibility and structural typing
+    
+    Phase 3 — Intermediate TypeScript
+21. Generics
+22. Generic functions
+23. Generic interfaces and types
+24. Generic constraints (extends)
+25. keyof
+26. typeof
+27. Indexed access types
+28. Enums
+29. Utility types: Partial, Pick, Omit, Record, Required, ReturnType
+    
+    Phase 4 — Advanced TypeScript
+30. Conditional types
+31. Mapped types
+32. Template literal types
+33. infer keyword
+34. Function overloads
+35. Type predicates
+36. Declaration files (.d.ts)
+37. Modules and namespaces
+38. Advanced generic patterns
+39. Strict type checking
+    
+    Phase 5 — TypeScript Configuration & Tooling
+40. Installing TypeScript
+41. tsconfig.json
+42. Important compiler options
+43. Strict mode
+44. ES modules and module resolution
+45. Compilation and build process
+46. Debugging TypeScript errors
+    
+    Phase 6 — TypeScript with React
+47. Typing props
+48. Typing state (useState)
+49. Event types
+50. useRef typing
+51. Context API typing
+52. Custom hooks
+53. Component return types
+54. Forms and API responses
+    
+    Phase 7 — TypeScript with Backend
+55. Node.js + TypeScript
+56. Express request and response types
+57. Middleware typing
+58. Error handling
+59. API request/response contracts
+60. Prisma integration
+61. Zod validation and type inference
+62. Authentication and JWT typing
+63. Database models and relationships
+    
+    Phase 8 — Real-World Projects
+64. Type-safe REST API
+65. Full-stack task management application
+66. Authentication system
+67. Real-time application with Socket.IO
+68. Production-ready full-stack application
